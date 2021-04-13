@@ -2,10 +2,10 @@
 
 // Registering stylesheet
 function theme_add_stylesheet() {
-    wp_enqueue_style( 'mainstyle', get_stylesheet_uri() );
+    wp_enqueue_style( 'main_style', get_stylesheet_uri() );
 }
 
-add_action( 'wp_enqueue_scripts', 'mainstyles' );
+add_action( 'wp_enqueue_stylesheet', 'mainstyles' );
 
 // Removing the default editor
 function init_remove_support(){
