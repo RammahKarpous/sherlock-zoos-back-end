@@ -1,11 +1,11 @@
 <?php
 
 // Registering stylesheet
-function theme_add_stylesheet() {
+function sherlock_zoos_stylesheet() {
     wp_enqueue_style( 'main_style', get_stylesheet_uri() );
 }
 
-add_action( 'wp_enqueue_stylesheet', 'mainstyles' );
+add_action( 'wp_enqueue_scripts', 'sherlock_zoos_stylesheet' );
 
 // Removing the default editor
 function init_remove_support(){
