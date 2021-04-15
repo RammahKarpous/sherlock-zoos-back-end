@@ -1,0 +1,1 @@
+alert('Laravel mix js is included!');

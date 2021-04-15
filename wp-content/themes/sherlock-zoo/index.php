@@ -7,7 +7,7 @@
             <p><?php the_content() ?></p>
             <small><?php the_time('F j, Y') ?></small>
         </section>
-    <?php endwhile;  
+    <?php endwhile;
         else : ?>
             <p>There are no posts</p>
     <?php endif; ?>
