@@ -1,5 +1,5 @@
-@use '../abstract';
+@use '../abstract' as *;
 
 body {
-    background: abstract.$bg-color;
+    background: $bg-color;
 }
