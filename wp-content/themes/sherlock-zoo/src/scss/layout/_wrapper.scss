@@ -1,9 +1,0 @@
-@use '../abstract' as *;
-
-.wrapper {
-    background: $bg-color;
-
-    @include min-width(500) {
-        background: #000;
-    }
-}

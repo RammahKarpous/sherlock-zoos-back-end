@@ -14,3 +14,13 @@ function sherlock_zoo_scripts()
 }
 
 add_action( 'wp_enqueue_scripts', 'sherlock_zoo_scripts' );
+
+add_theme_support( 'post-thumbnails' );
+add_filter( 'allowed_http_origin', '__return_true' );
+
+// Removing the default wysiwyg editor on the Animals page
+add_action('init', 'init_remove_support',100);
+function init_remove_support(){
+    $post_type = 'animals';
+    remove_post_type_support( $post_type, 'editor');
+}
